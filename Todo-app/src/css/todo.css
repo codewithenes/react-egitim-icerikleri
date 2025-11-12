@@ -1,0 +1,49 @@
+body{
+    background-color: gray;
+    display: flex;
+    justify-content: center; /* Yatay ortalama */
+    align-items: center;     /* Dikey ortalama */
+    min-height:35vh;       /* Sayfanın tamamını kaplasın */
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace; 
+}
+.todo-create{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+
+}
+.todo-input{
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 50px;
+    border-radius: 8px;
+
+}
+button{
+    margin-top: 9px;
+    width: 40%;
+    border: none;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+     background-color: green;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+.todo-icons{
+    font-size: 25px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+button:hover {box-shadow:0 8px 16px 0 rgba(0,0,0,0.6)}

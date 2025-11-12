@@ -1,0 +1,19 @@
+.header{
+    width: 90%;
+  height: 10%;
+  background-color: rgb(82, 106, 161);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%); /* Yatayda ortalar */
+
+
+}
+.title{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 25px;
+    align-items: center;
+    padding: 20px 10px;
+
+}

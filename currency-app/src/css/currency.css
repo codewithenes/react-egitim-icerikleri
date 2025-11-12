@@ -1,0 +1,105 @@
+.currency-div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  border: 5px;
+  border-style: groove;
+  width: 50%;
+  margin: auto;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3); /* saydam arkaplan */
+  backdrop-filter: blur(5px);           /* blur efekti */
+  -webkit-backdrop-filter: blur(10px);   /* Safari için */
+  
+}
+.currency-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 5px;
+  border-style: groove;
+  width: 50%;
+  margin: auto;
+  padding: 2px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3); /* saydam arkaplan */
+  backdrop-filter: blur(5px);           /* blur efekti */
+  -webkit-backdrop-filter: blur(10px);   /* Safari için */
+  
+}
+.currency-list p {
+  flex: 0 0 calc(20% - 5px); /* Her p genişliği: container genişliğinin 1/3'ü */
+  box-sizing: border-box;         /* padding ve gap’i dahil et */
+  text-align: center;
+}
+
+
+.main {
+  height: 95vh;                  /* tüm ekran yüksekliği */
+  display:block;
+  justify-content: center;        /* yatay ortalama */
+  align-items: center;  
+   flex-direction: row;
+}
+
+.h2-header {
+  margin: 0;
+  font-size: 22px;
+  text-align: center;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.currency-div button {
+  width: 100px;
+  height: 40px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: transform 0.1s; /* animasyon ekle */
+}
+
+.currency-div button:active {
+  transform: scale(0.95); /* basıldığında küçülme efekti */
+  background-color: #45a049; /* renk değişimi */
+}
+
+.currency-select {
+  width: 200px;
+  max-height: 200px;    /* en fazla 200px görünsün */
+  overflow-y: auto;     /* dikey kaydırma */
+}
+
+/* Chrome, Safari için özel scrollbar */
+.currency-select::-webkit-scrollbar {
+  width: 8px;
+}
+.currency-select::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+.currency-select::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+.currency-select::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Firefox için */
+.currency-select {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+
